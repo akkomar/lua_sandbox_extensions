@@ -287,7 +287,7 @@ function output(histograms, row, graphs)
                 and not t.alerted
                 and t.updated - t.created > alert_active
                 and #graphs < 25
-                and not alert_ignore[k] then
+                and not alert_ignore[hn] then
                     local alert = false
                     for i=1, histograms.rows do
                         -- confirm there is at least one other row with the minimum number of submissions
